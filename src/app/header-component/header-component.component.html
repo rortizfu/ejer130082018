@@ -1,0 +1,7 @@
+<mat-card-header>
+  <div mat-card-avatar [ngStyle] = "{'background-image': 'url(' + objPersona.img + ')' }" class="example-header-image"></div>
+  <div mat-card-avatar [style.background-image] = "['url(' + objPersona.img + ')' ]" class="example-header-image"></div>
+  <div mat-card-avatar style.background-image = "url({{ objPersona.img }})" class="example-header-image"></div>
+  <mat-card-title>{{objPersona.name}}</mat-card-title>
+  <mat-card-subtitle>{{objPersona.profile}}</mat-card-subtitle>
+</mat-card-header>
